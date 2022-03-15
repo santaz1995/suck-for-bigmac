@@ -6,18 +6,17 @@ import {
   SimpleGrid,
   Button,
   useColorModeValue,
-  chakra,
   Input,
-  Select, FormHelperText, FormLabel, FormControl, FormErrorMessage
+  Select,
+  FormLabel,
+  FormControl,
+  FormErrorMessage
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import thumbSlave from '../public/images/works/slave.jpeg'
-import thumbBum from '../public/images/works/bum.jpeg'
-import { useState } from 'react';
 import { Form, Formik, Field } from 'formik';
 
 const Home = () => {
@@ -133,16 +132,20 @@ const Home = () => {
             <GridItem
               href=""
               title="Скоро"
-              thumbnail={thumbSlave}
             >
               Як стати рабом українця за 1 долар?
             </GridItem>
             <GridItem
               href=""
               title="Скоро"
-              thumbnail={thumbBum}
             >
               Як виграти бійку за шматок хліба на смітнику?
+            </GridItem>
+            <GridItem
+              href=""
+              title="Скоро"
+            >
+              Як вижити блогеру на заводі?
             </GridItem>
           </SimpleGrid>
 
@@ -160,4 +163,3 @@ const Home = () => {
 }
 
 export default Home
-export { getServerSideProps } from '../components/chakra'
